@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <link href="https://api.fontshare.com/v2/css?&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'General Sans', sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .display {
+            background-color: black;
+            color: white;
+            font-size: 3rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.696);
+        }
+        
+        #btn {
+            border: 2px solid black;
+            margin: 2rem 0;
+            border-radius: 0.3rem;
+            font-size: 1rem;
+            padding: .5rem 1rem;
+            text-transform: uppercase;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.696);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="display" id="show">
+            Background Color: 
+        </div>
+        <button id="btn">Click Me</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

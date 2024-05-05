@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Counter</title>
+    <link href="https://api.fontshare.com/v2/css?&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'General Sans', sans-serif;
+            /* color: white; */
+        }
+
+        body {
+            background-color: #38ffa2;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        button {
+            background-color: black;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in, color 0.3s ease-in;
+            text-transform: uppercase;
+            border-radius: 0.2rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <h2>0</h2>
+        <div class="Btns">
+            <button id="decrease">Decrease</button>
+            <button id="reset">Reset</button>
+            <button id="increase">Increase</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
